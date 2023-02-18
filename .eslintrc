@@ -1,0 +1,22 @@
+{
+    "root": true,
+    "parser": "@typescript-eslint/parser",
+    "plugins": [
+        "@typescript-eslint"
+    ],
+    "extends": [
+        "eslint:recommended",
+        "plugin:@typescript-eslint/eslint-recommended",
+        "plugin:@typescript-eslint/recommended"
+    ],
+    "rules": {
+        "@typescript-eslint/no-inferrable-types": "off",
+        "indent": ["error", 4],
+        "import/no-unresolved": "off",
+        "import/extensions": "off",
+        "no-restricted-syntax": "off",
+        "no-plusplus": "off",
+        "no-await-in-loop": "off",
+        "no-continue": "off"
+    }
+}

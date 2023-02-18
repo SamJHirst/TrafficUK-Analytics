@@ -1,0 +1,20 @@
+image: 'node:latest'
+
+stages:
+    - Test
+
+Lint:
+  stage: Test
+  script:
+    - npm install
+    - npm install -g typescript
+    - npm install -g eslint
+    - npm run lint
+
+Unit Tests:
+  stage: Test
+  script:
+    - npm install
+    - npm install -g typescript
+    - npm install -g jest
+    - npm run test

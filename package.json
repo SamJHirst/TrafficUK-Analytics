@@ -1,0 +1,45 @@
+{
+    "name": "trafficuk-analytics-api",
+    "author": "Naeviant Software Limited <admin@naeviant.com> (https://naeviant.com)",
+    "version": "0.1.0",
+    "private": true,
+    "homepage": "https://trafficuk.naeviant.com",
+    "repository": {
+        "type": "git",
+        "url": "https://gitlab.com/naeviant/trafficuk/analytics/api"
+    },
+    "bugs": {
+        "url": "https://gitlab.com/naeviant/trafficuk/analytics/api/-/issues",
+        "email": "admin@naeviant.com"
+    },
+    "scripts": {
+        "start": "tsc && node dist/index.js",
+        "test": "tsc && jest --runInBand dist/ --coverage",
+        "lint": "eslint . --ext .ts",
+        "lint:fix": "eslint . --ext .ts --fix",
+        "docs": "apidoc -i src -o docs"
+    },
+    "pre-commit": [
+        "lint",
+        "test"
+    ],
+    "dependencies": {
+        "apidoc": "^0.53.1",
+        "body-parser": "^1.20.1",
+        "cors": "^2.8.5",
+        "dotenv": "^16.0.3",
+        "express": "^4.18.2",
+        "mongoose": "^6.8.3"
+    },
+    "devDependencies": {
+        "@types/cors": "^2.8.13",
+        "@types/express": "^4.17.15",
+        "@types/jest": "^29.2.5",
+        "@typescript-eslint/eslint-plugin": "^5.48.1",
+        "@typescript-eslint/parser": "^5.48.1",
+        "eslint": "^8.31.0",
+        "jest": "^29.3.1",
+        "ts-jest": "^29.0.3",
+        "typescript": "^4.9.4"
+    }
+}

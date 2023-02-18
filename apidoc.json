@@ -1,0 +1,8 @@
+{
+    "name": "TrafficUK",
+    "version": "0.1.0",
+    "description": "Analytics API Documentation",
+    "title": "TrafficUK Analytics API Documentation",
+    "url" : "https://api.trafficuk.net",
+    "sampleUrl": false
+  }
